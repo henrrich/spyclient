@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<server_ip>127.0.0.1</server_ip>
+	<server_port>9999</server_port>
+	<workspace>workspace path for client, e.g. /tmp</workspace>
+	<monitors>
+		<monitor>
+			<type>SIMPLE_SYSTEM_CPU_MONITOR</type>
+			<interval>2</interval>
+			<threshold>0.8</threshold>
+		</monitor>
+	</monitors>
+	<collector>
+		<log_prefix>log achieve file prefix, e.g. mylog</log_prefix>
+		<files>
+			<file>path of the log to be collected, e.g. /var/log/messages</file>
+			<file>another log to collect</file>
+			<file>and another log to collect</file>
+		</files>
+	</collector>
+</config>
